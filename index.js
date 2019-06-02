@@ -27,14 +27,22 @@ app.use(express.json()) // for parsing application/json
 //set public folder as static folder for static file
 app.use(express.static('public'));
 
-// All routes
+// Home
+app.get('/', (req, res) => {
+    if (process.env.DB_NAME) {
+        res.render('index', {
+            name: process.env.APP_NAME
+        });
+    } else {
+        res.redirect('install');
+    }
+});
+// routes
 const install = require('./routes/install');
+const login = require('./routes/login');
 
 app.use('/install', install);
-
-app.get('/', (req, res) => {
-    console.log(process.env)
-});
+app.use('/login', login);
 
 app.listen(port, () => {
     console.log('Server is running at port ' + port);

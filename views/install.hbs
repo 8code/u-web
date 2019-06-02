@@ -134,6 +134,7 @@
     </style>
 </head>
 
+
 <body>
     <section class="u-container">
         <form action="/install" method="POST" class="u-form">
@@ -141,27 +142,48 @@
             <h2 class="u-title">u-web</h2>
             <div class="u-input-group">
                 <label class="u-label">
-                    Host
+                    APP NAME
+                </label>
+                <input name="app_name" value="" required="required" placeholder="Enter Website Name" type="text"
+                    class="u-input">
+            </div>
+            <div class="u-input-group">
+                <label class="u-label">
+                    APP VERSION
+                </label>
+                <input name="app_version" value="1.0.0" required="required" placeholder="default 1.0.0" type="text"
+                    class="u-input">
+            </div>
+            <div class="u-input-group">
+                <label class="u-label">
+                    APP DESCRIPTION
+                </label>
+                <input name="app_description" required="required" placeholder="Enter Website Description" type="text"
+                    class="u-input">
+            </div>
+            <div class="u-input-group">
+                <label class="u-label">
+                    DB HOST
                 </label>
                 <input name="db_host" value="localhost" required="required" placeholder="default localhost" type="text"
                     class="u-input">
             </div>
             <div class="u-input-group">
                 <label class="u-label">
-                    User
+                    DB USER
                 </label>
                 <input name="db_user" value="root" required="required" placeholder="default root" type="text"
                     class="u-input">
             </div>
             <div class="u-input-group">
                 <label class="u-label">
-                    DB Password
+                    DB PASSWORD
                 </label>
                 <input name="db_password" value="" placeholder="default null" type="text" class="u-input">
             </div>
             <div class="u-input-group">
                 <label class="u-label">
-                    Create Database
+                    DATABASE NAME
                 </label>
                 <input name="db_name" required="required" placeholder="Enter Database Name" type="text" class="u-input">
             </div>
@@ -183,7 +205,7 @@
             </button>
             <div class="login-with">
                 <div class="u-input-group">
-                    <a href="#" class="u-label">
+                    <a target="_BLANK" href=" https://github.com/aribahtiarpro/u-web" class="u-label">
                         Help Me ?
                     </a>
                 </div>
