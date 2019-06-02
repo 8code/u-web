@@ -1,46 +1,46 @@
 # u-web
-cms website for blog and e commerce, with API
 
-
+<br>cms website for blog and e commerce, with API
 #1. users
-	user_id
-	username
-	password
+
+<br>user_id
+<br>username
+<br>password
 
 #2. client
-	client_id
-	client_token
-	user_id
-	type (full,other)
-	website
+<br>client_id
+<br>client_token
+<br>user_id
+<br>type (full,other)
+<br>website
 
 #4. access_token
-	access_token
-	client_id
-	expired
-	created_at
-	login_on
-	active
+<br>access_token
+<br>client_id
+<br>expired
+<br>created_at
+<br>login_on
+<br>active
 	
-request token with username and password
+<br>request token with username and password
 
-a. check client_token
-b. check website
-c. check type
-d. create access token
-e. response JSON token and user data
+<br>a. check client_token
+<br>b. check website
+<br>c. check type
+<br>d. create access token
+<br>e. response JSON token and user data
 
-request data with token akses
+<br>request data with token akses
 
-a. chek access_token
-b. check expired
-c. check active
-d. check website
-e. check type
+<br>a. chek access_token
+<br>b. check expired
+<br>c. check active
+<br>d. check website
+<br>e. check type
 
-if type == full 
-	next to all action
-if type == other
-	check with confirmation on login defice with type full
-	or comfirmation with mobile number or email
+<br>if type == full 
+<br>	next to all action
+<br>if type == other
+<br> check with confirmation on login defice with type full
+<br> or comfirmation with mobile number or email
 
