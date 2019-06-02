@@ -1,0 +1,33 @@
+{
+  "name": "u-web",
+  "version": "0.0.1",
+  "description": "u-web for all app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aribahtiarpro/u-web.git"
+  },
+  "keywords": [
+    "u-web",
+    "u-nesia",
+    "u-app",
+    "for",
+    "all",
+    "app"
+  ],
+  "author": "aribahtiar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aribahtiarpro/u-web/issues"
+  },
+  "homepage": "https://github.com/aribahtiarpro/u-web#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "hbs": "^4.0.4",
+    "mysql": "^2.17.1"
+  }
+}

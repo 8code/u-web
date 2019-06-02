@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Install Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: #666;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: #999;
+        }
+
+        .u-container,
+        .u-form,
+        .u-btn,
+        .u-title,
+        .sub-title,
+        .u-input-group,
+        .u-label,
+        .u-logo,
+        .u-image,
+        .login-with {
+            float: left;
+            width: 100%;
+        }
+
+        .u-container {
+            width: 100%;
+            padding: 5% 15%;
+        }
+
+        .u-form {
+            width: 40%;
+            margin: 0 30%;
+            border: 1px solid #f1f1f1;
+            padding: 20px 16px;
+            border-radius: 7px;
+            box-shadow: 1px 1px 2px #f1f1f1;
+        }
+
+        .u-title {
+            margin: 14px 0;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .u-input-group {
+            width: 100%;
+        }
+
+        .u-label {
+            padding: 10px 12px;
+            transition: 0.2s ease all;
+        }
+
+        .u-input {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 50px;
+            border: 1px solid #ccc;
+        }
+
+        .u-input:focus {
+            outline: none;
+            border: 1px solid #666
+        }
+
+        .u-logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: darkcyan;
+            text-align: center
+        }
+
+        .u-btn {
+            margin-top: 16px;
+            padding: 12px 14px;
+            border-radius: 50px;
+            background: darkcyan;
+            border: 0;
+            color: #f1f1f1;
+            cursor: pointer;
+            opacity: .5;
+        }
+
+        .u-btn:hover {
+            opacity: .8;
+            color: #fff;
+        }
+
+        .google {
+            width: 48%;
+            margin: 10px 1%;
+            background: red;
+        }
+
+        .facebook {
+            width: 48%;
+            margin: 10px 1%;
+            background: blue;
+        }
+
+        .login-with {
+            text-align: center;
+        }
+
+        .btn-register {
+            text-align: right;
+            float: right;
+            padding: 10px 16px;
+        }
+
+        @media screen and (max-width:800px) {
+            .u-form {
+                width: 100%;
+                margin: 0;
+                margin-top: 40px;
+                border: 0;
+            }
+
+            .u-container {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="u-container">
+        <form action="/install" method="POST" class="u-form">
+            <h1 class="u-logo">Install Website</h1>
+            <h2 class="u-title">u-web</h2>
+            <div class="u-input-group">
+                <label class="u-label">
+                    Host
+                </label>
+                <input name="db_host" value="localhost" required="required" placeholder="Enter Hostname example (localhost)"
+                    type="text" class="u-input">
+            </div>
+            <div class="u-input-group">
+                <label class="u-label">
+                    User
+                </label>
+                <input name="db_user" value="root" required="required" placeholder="Enter Username example (root)" type="text"
+                    class="u-input">
+            </div>
+            <div class="u-input-group">
+                <label class="u-label">
+                    DB Password
+                </label>
+                <input name="db_password" value="" placeholder="Enter DB Password example ()" type="text" class="u-input">
+            </div>
+            <div class="u-input-group">
+                <label class="u-label">
+                    Create Database
+                </label>
+                <input name="db_name" required="required" placeholder="Enter Database Name" type="text" class="u-input">
+            </div>
+            <div class="u-input-group">
+                <label class="u-label">
+                    Email (admin)
+                </label>
+                <input name="email" required="required" placeholder="Enter your Email" type="text" class="u-input">
+            </div>
+            <div class="u-input-group">
+                <label class="u-label">
+                    Password (admin)
+                </label>
+                <input name="password" required="required" placeholder="Enter your Password" type="password" class="u-input">
+            </div>
+            <button type="submit" class="u-btn">
+                Install Website
+            </button>
+            <div class="login-with">
+                <div class="u-input-group">
+                    <a href="#" class="u-label">
+                        Help Me ?
+                    </a>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
